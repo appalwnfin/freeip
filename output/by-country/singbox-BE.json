@@ -6,14 +6,23 @@
     {
       "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "104.21.64.198",
-      "server_port": 2086,
-      "uuid": "73796e63-0000-4000-8000-000000000007",
+      "server": "202.181.177.8",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/channels/act",
         "headers": {
-          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },

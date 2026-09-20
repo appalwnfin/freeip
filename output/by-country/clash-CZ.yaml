@@ -5,47 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 104.25.178.92
-  port: 443
-  udp: true
-  type: vless
-  uuid: d9abc6e3-83bf-4c28-ae68-72465e2abe39
-  tls: true
-  servername: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: '/vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560 '
-    headers:
-      Host: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: www.speedtest.net
   port: 443
   udp: true
   type: vless
-  uuid: eb24c3b4-7936-45e2-a253-e54fd1955a7f
+  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
   tls: true
-  servername: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/5XS6voHZVYs7mzpMKkTEfkiDauqBCt0S?ed=2560
+    path: /vl/trUydYgvH0rYux5ihp4zgZjo4RYK412?ed=2560
     headers:
-      Host: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 188.114.97.6
-  port: 8080
+      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 153.76.185.84
+  port: 3090
   udp: true
   type: vless
-  uuid: ffa431ab-a59b-4092-a418-905fcb1e4d5f
-  network: ws
-  ws-opts:
-    path: /vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560
-    headers:
-      Host: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  uuid: 995b4d19-8c0d-4f81-a199-35a4f1d7744e
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 95.85.230.35
   port: 443
   udp: true
@@ -65,7 +48,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +56,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES
