@@ -5,21 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "185.125.103.62",
-      "server_port": 8082,
-      "uuid": "041e1ba9-5d17-4e7c-baac-c5aa877da29b",
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+      "server": "45.134.9.133",
+      "server_port": 8443,
+      "uuid": "a6d20e79-d326-42c1-bc20-f4cecc6dc42d",
       "tls": {
         "enabled": true,
-        "server_name": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev",
-        "insecure": false
+        "server_name": "ul-mexico1.09vpn.com",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/@Marisa_kristifp=chrome",
-        "headers": {
-          "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-        }
+        "path": "/vless/"
       }
     },
     {
@@ -27,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
