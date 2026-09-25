@@ -17,6 +17,18 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  server: 178.236.16.98
+  port: 35728
+  udp: true
+  type: vless
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  tls: true
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
   server: 2.56.121.43
   port: 443
   udp: true
@@ -28,7 +40,7 @@ proxies:
     public-key: vnUSQFujh6K08KR6FHYWoBkZCAEZNWSKji0PPw9eMWM
     short-id: 86229a5e3b1e6ef4
   servername: www.ikea.com
-  client-fingerprint: ''
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
 rules:
 - MATCH,PROXIES
