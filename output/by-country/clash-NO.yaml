@@ -17,12 +17,12 @@ proxies:
   servername: deepl.com
   client-fingerprint: qq
 - name: 🇳🇴 挪威 (Norway) 02 - xiaohe
-  server: 185.213.23.63
-  port: 990
+  server: 139.100.236.74
+  port: 1
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: WxYpOK1iPSJySbVNMMJDtw
 proxy-groups:
 - name: PROXIES
   type: select
