@@ -5,19 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: us7-2.998998.best
-  port: 443
+  server: 172.67.204.153
+  port: 2052
   udp: true
   type: vless
-  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
-  tls: true
-  servername: server9.9966338.xyz
-  skip-cert-verify: false
+  uuid: b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df
   network: ws
   ws-opts:
-    path: /imnotarealherox
+    path: /@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: server9.9966338.xyz
+      Host: uwu.blueknightnet.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
