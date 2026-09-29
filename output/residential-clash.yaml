@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  server: 172.64.229.170
-  port: 2082
+  server: 104.18.47.113
+  port: 80
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -15,37 +15,13 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 02 (家宽) - xiaohe
-  server: 162.159.153.4
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  server: 145.239.30.17
+  port: 2053
   udp: true
   type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 3e956106-7f92-4cbf-bf77-715d3890fa84
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   server: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
   port: 443
   udp: true
@@ -59,17 +35,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 02 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 02 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
