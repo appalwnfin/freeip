@@ -4,32 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇲🇺 MU 01 - xiaohe",
-      "server": "62.72.166.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime40.workers.dev"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe",
+      "server": "185.231.233.91",
+      "server_port": 17167,
+      "method": "aes-128-gcm",
+      "password": "ca438054771821250089399a2f33275e"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇺 MU 01 - xiaohe"
+        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇺 MU 01 - xiaohe"
+        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
