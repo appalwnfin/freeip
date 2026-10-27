@@ -45,14 +45,15 @@ proxies:
     public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  server: 154.46.31.106
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 185.156.44.99
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
