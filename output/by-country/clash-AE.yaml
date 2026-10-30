@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: ams1.rvpn.app
+  server: 178.253.16.185
   port: 8388
   udp: true
   type: ss
@@ -22,41 +22,17 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: forshynewh.duckdns.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 329e13e4-ee7c-4802-ac72-5fcab79c2402
-  sni: forshynewh.duckdns.org
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 142.91.101.39
-  port: 627
+  server: 185.253.116.33
+  port: 14430
   udp: true
   type: vless
-  uuid: 50f7f0fe-32be-4d5a-9432-095160ff7775
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /vless
     headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 5.129.198.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: 26f751bc-2edc-4338-9c3f-abeb32aba3b7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
-  servername: mmxi9k64xsh7.assetgrid.space
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -67,6 +43,25 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16284
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
