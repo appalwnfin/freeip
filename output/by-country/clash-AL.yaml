@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: esso-music-coroborito.keno.su
-  port: 443
+- name: 🇦🇱 AL 01 - xiaohe
+  server: 23.95.72.244
+  port: 50120
   udp: true
   type: vless
-  uuid: dc95c1dd-2cd3-414c-8cf1-71ae86dad666
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _MeP-WwmolUvi6wMXNoSs_zo6miG_OW7xk4ibzADiHY
-  servername: esso-music-coroborito.keno.su
+    public-key: n4sk3x-GS3uCHsert4qOJQt_RzjcTPGFQvRImsnsyTA
+    short-id: 289f5ebf78f79b
+  servername: api.adidas.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇦🇱 AL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇦🇱 AL 01 - xiaohe
 rules:
 - MATCH,PROXIES
