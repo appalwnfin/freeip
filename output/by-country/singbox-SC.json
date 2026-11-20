@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+      "server": "188.114.98.112",
+      "server_port": 80,
+      "uuid": "0991a0c4-0ee5-4213-af89-7ad589f853f3",
+      "transport": {
+        "type": "ws",
+        "path": "/ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560",
+        "headers": {
+          "Host": "elenaaaaaaaaaa.cloudns.pro."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
       "server": "46.29.255.123",
       "server_port": 59539,
       "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
@@ -29,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
