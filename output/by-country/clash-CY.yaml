@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 132.243.242.115
+  server: 132.243.242.244
   port: 9543
   udp: true
   type: vless
@@ -18,7 +18,7 @@ proxies:
   servername: storage.yandexcloud.net
   client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  server: leviko-nl9472.shopingggg.ir
+  server: 132.243.242.40
   port: 9543
   udp: true
   type: vless
